@@ -32,3 +32,12 @@ def update_graphs(selected_metric):
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+
+)
+def update_graphs(selected_metric):
+    fig1 = px.bar(df_merged, x='full_name', y=selected_metric)
+    fig2 = px.line(df_merged, x='timedata', y=selected_metric)
+    return fig1, fig2
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
