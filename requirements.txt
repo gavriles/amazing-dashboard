@@ -1,4 +1,1 @@
-pandas
-plotly
-dash
-flask
+pip freeze > requirements.txt
